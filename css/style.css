@@ -11,16 +11,33 @@
 /********************************* 
     GENERICS
 *********************************/
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 
 /********************************* 
     UTILS
 *********************************/
 
-
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+
+/********************************* 
+    BODY
+*********************************/
+
+body{
+    /* Debug */
+    color: white;
 }
 
 /********************************* 
@@ -28,7 +45,7 @@
 *********************************/
 .main-content{
     height: calc(100vh - 100px);
-    width: 100%;
+    
 }
 
 /* SIDEBAR */
@@ -43,16 +60,42 @@
 .content{
     width: calc(100% - 250px);
     background-color: #141922;
-    overflow: auto;
-
 }
 
+/* Content Header */
 .content-header{
     height: 100px;
-    width: 100%;
+    width: inherit;
     background-color: #080b12;
     position: fixed;
+    text-align: end;
+    line-height: 100px;
+    padding-right: 1rem;
+ 
 }
+
+.btn.upgrade{
+    border: 2px solid white;
+    background-color: #080b12;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+}
+
+/* Content Nav */
+.content-nav{
+    padding-top: 130px;
+    line-height: 2rem;
+}
+
+.content-nav .row{
+    justify-content: center;
+}
+
+.content-nav .row>li{
+    margin: 0 1rem;
+}
+
 
 
 
