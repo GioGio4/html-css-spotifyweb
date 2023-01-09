@@ -20,6 +20,15 @@ a{
     color: inherit;
 }
 
+img{
+    width: 100%;
+}
+
+.content section{
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+
 
 /********************************* 
     UTILS
@@ -63,6 +72,7 @@ body{
 }
 
 /* Content Header */
+
 .content-header{
     height: 100px;
     width: inherit;
@@ -83,6 +93,7 @@ body{
 }
 
 /* Content Nav */
+
 .content-nav{
     padding-top: 130px;
     line-height: 2rem;
@@ -94,6 +105,18 @@ body{
 
 .content-nav .row>li{
     margin: 0 1rem;
+}
+
+/* Section recently played */
+
+.recently-played .row{
+    justify-content: space-between;
+
+}
+
+.recently-played .card{
+    width: calc(90% / 6);
+    text-align: center;
 }
 
 
