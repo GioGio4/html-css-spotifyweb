@@ -20,23 +20,27 @@ a{
     color: inherit;
 }
 
-img{
-    width: 100%;
+img,
+svg{
+    max-width: 100%;
 }
 
-.content section{
-    margin: 2rem 0;
-    padding: 0 2rem;
-}
 
 
 /********************************* 
     UTILS
 *********************************/
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+    /* Text style */
+
+section p{
+    color: #7b7d82;
+}
+
+.card>h2,
+.card>h3,
+.card>p{
+    text-align: center;
 }
 
 
@@ -76,7 +80,9 @@ body{
 .content-header{
     height: 100px;
     width: inherit;
-    background-color: #080b12;
+    background-color:black;
+    opacity: 0.8;
+
     position: fixed;
     text-align: end;
     line-height: 100px;
@@ -92,11 +98,48 @@ body{
     border-radius: 50px;
 }
 
+/* MAIN */
+
+main{
+    height: calc(100vh - 100px);
+    width: 100%;
+    padding: 100px 2rem 0 2rem;
+
+    overflow: auto;
+}
+
+main section{
+    margin-bottom: 2rem;
+}
+
+main img{
+    width: 100%;
+}
+
+main section .col-2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    line-height: 1rem;
+    padding: 1rem;
+}
+
+main section .col-2>h3,
+main section .col-2>p{
+    text-align: center;
+}
+
+main section>h2,
+main section>p {
+    padding-left: 1rem;
+    
+}
+
 /* Content Nav */
 
 .content-nav{
-    padding-top: 130px;
     line-height: 2rem;
+    margin-top: 1rem;
 }
 
 .content-nav .row{
@@ -109,16 +152,15 @@ body{
 
 /* Section recently played */
 
-.recently-played .row{
-    justify-content: space-between;
 
+
+/* Section Recently Played  */
+
+/* Section popular Artist  */
+
+.popular-artist .card>img{
+    border-radius: 50%;
 }
-
-.recently-played .card{
-    width: calc(90% / 6);
-    text-align: center;
-}
-
 
 
 
