@@ -22,6 +22,11 @@
            COL
  ********************************/
 
+ .col{
+   flex-grow: 1;
+   flex-basis: auto;
+ }
+
  .col-1{
     flex-basis: calc((100% / 12) * 1);
     max-width: calc((100% / 12) * 1 );

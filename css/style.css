@@ -22,7 +22,7 @@ a{
 
 img,
 svg{
-    max-height: 100%;
+    max-width: 100%;
 }
 
 
@@ -77,12 +77,77 @@ body{
     height: 3rem;
 }
 
+.nav-menu *,
+.playlist *,
+.create-playlist *,
+.download *,
+.user-name *{
+    line-height: 2rem;
+}
+
+.nav-menu{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar .nav-menu img{
+    width: 2rem;
+}
+
+.create-playlist.row{
+    align-items: center;
+}
+
+.btn-playlist{
+    height: 2rem;
+    width: 2rem;
+    background-color: #5a5a5a;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.nav-menu li.row{
+    align-items: center;
+}
+
+.user.row-reverse{
+    margin-top: auto;
+}
+
+.download.row{
+    border-bottom: 1px solid #5a5a5a;
+    line-height: 2rem;
+}
+
+.download.row img{
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.user-name.row img{
+    background-color: #5a5a5a;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.user .download.row,
+.user .user-name.row{
+    align-items: center;
+}
+
 /*  CONTENT */
 
 .content{
     width: calc(100% - 250px);
     background-color: #141922;
 }
+
+
 
 /* Content Header */
 
@@ -188,13 +253,13 @@ footer img{
 }
 
 
-footer .col-2,
-footer .col-8{
-    height: 100%;
+footer .col-3,
+footer .col{
+    max-height: 100%;
     align-items: center;
 }
 
-footer .col-8{
+footer .col{
     justify-content: center;
 }
 
@@ -224,20 +289,21 @@ footer .col-8{
     width: 20%;
 }
 
-.col-2 .progress-bar{
+.col-3 .progress-bar{
     width: 150px;
 }
 
-footer .col-2 i,
-footer .col-2 img{
+footer .col-3 i,
+footer .col-3 img{
     margin: 0 0.5rem;
 }
 
-footer .col-2 p{
+footer .col-3 p{
     text-align: left;
     margin-right: 0.5rem;
 }
 
-.col-2.row.right{
+.col-3.row.right{
     justify-content: flex-end;
 }
+
