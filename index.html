@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web App</title>
 
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Style -->
     <link rel="stylesheet" href="./css/12bool.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -19,6 +24,28 @@
 
     <!-- Sidebar -->
        <div class="sidebar">
+
+        <nav class="row-reverse">
+
+            <div class="column logo">
+                <img src="./img/logo.svg" alt="">
+
+            </div>
+
+            <div class="nav-menu">
+               
+            </div>
+
+            <div class="playlist">
+
+            </div>
+
+            <div class="user">
+
+            </div>
+
+        </nav>
+
    
        </div>
 
@@ -148,7 +175,59 @@
     
 <!-- FOOTER
  -->
-    <footer>
+    <footer class="row">
+
+        <div class="col-2 row">
+
+            <img src="./img/sinister.jpeg" alt="Sinister">
+
+            <div>
+            <p>Sinister</p>
+            <p>Brano nome</p>
+            </div>
+
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+
+        </div>
+
+        <div class="col-8 row-reverse">
+
+            <div class="player-button">
+
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+
+            </div>
+
+            <div class="player-bar row">
+                <span class="time">0:25</span>
+                <div class="progress-bar">
+                    <div class="progress">
+                    </div>
+                </div>
+                <span class="time">4:35</span>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-2 row right">
+
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-display"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="progress-bar">
+                <div class="progress">
+                </div>
+            </div>
+
+        </div>
+
 
     </footer>
     

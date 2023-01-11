@@ -12,6 +12,12 @@
     flex-wrap: wrap;
  }
 
+ .row-reverse{
+    display: flex;
+    flex-direction: column;
+    
+ }
+
  /*******************************
            COL
  ********************************/
