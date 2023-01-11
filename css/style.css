@@ -77,6 +77,10 @@ body{
     height: 3rem;
 }
 
+.small-logo{
+    display: none;
+}
+
 .nav-menu *,
 .playlist *,
 .create-playlist *,
@@ -250,7 +254,6 @@ main section>p {
 footer.row{
     height: 100px;
     background-color: #282828;
-    padding: 0 1rem;
     flex-wrap: nowrap;
     justify-content: space-between;
     position: sticky;
@@ -274,6 +277,7 @@ footer .col-center{
 
 .player-button{
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .player-button .fa-circle-play{
@@ -286,7 +290,7 @@ footer .col-center{
 
 .progress-bar{
     background-color:#5a5a5a;
-    width: 500px;
+    width: 30vw;
     height: 3px;
     border-radius: 20px;
     margin: 0rem 0.5rem;
@@ -320,7 +324,7 @@ footer .col-side p{
    MEDIA QUERIES
 *********************************/
 
-/* ---Large---- */
+/* ---XLarge---- */
 
 @media screen and (max-width:1201px){
 
@@ -333,3 +337,115 @@ footer .col-side p{
 
 
 }
+
+/* ---Large---- */
+
+@media screen and (max-width:993px){
+
+    .recently-played .col-2,
+    .create-user .col-2,
+    .popular-artist .col-2{
+        flex-basis: calc((100% / 12) * 4);
+        max-width: calc((100% / 12) * 4);
+    }
+
+    .progress-bar{
+        width: 25vw;
+    }
+
+    .col-side .progress-bar{
+        width: 70px;
+    }
+}
+
+
+
+    /* Medium */
+@media screen and (max-width:769px){
+
+    .recently-played .col-2,
+    .create-user .col-2,
+    .popular-artist .col-2{
+        flex-basis: calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    .progress-bar{
+        width: 20vw;
+    }
+
+    .col-side .progress-bar{
+        width: 60px;
+    }
+}
+
+    /* Small */
+    @media screen and (max-width:640px){
+
+      footer.row>.col-side.row{
+        flex-shrink: 10000;
+      }
+
+      .col-side .progress-bar{
+        width: 50px;
+    }
+}
+
+    /* XSmall */
+
+      @media screen and (max-width:600px){
+
+        .sidebar{
+            width: 50px;
+            padding: 0.5rem;
+            align-items: center;
+        }
+
+        .content{
+            width: calc(100% - 50px);
+        }
+
+        .large-logo{
+            display: none;
+        }
+
+        .small-logo{
+            display: block;
+            width: 35px;
+        }
+
+        .query-none{
+            display: none;
+        }
+
+        .nav-menu{
+            margin-top: 0;
+        }
+
+        .playlist{
+            display: none;
+        }
+
+        .download.row{
+            border: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .download.row p{
+            display: none;
+        }
+
+        .user-name.row h4{
+            display: none;
+        }
+        
+  
+        .col-side .progress-bar{
+          width: 40px;
+      }
+
+      }
