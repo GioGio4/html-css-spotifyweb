@@ -53,8 +53,8 @@ section p{
 *********************************/
 
 body{
-    /* Debug */
     color: white;
+    font-family: 'Fredoka', sans-serif;
 }
 
 /********************************* 
@@ -71,6 +71,19 @@ body{
     width: 250px;
     background-color: black;
     padding: 1rem;
+    color: #7a7c81;
+}
+
+.sidebar h4{
+    color: white;
+}
+
+.sidebar li:hover{
+    color: white;
+}
+
+.sidebar .nav-menu li:hover{
+    border-left: 2px solid  rgb(90, 180, 90);
 }
 
 .column.logo{
@@ -98,9 +111,15 @@ body{
     width: 2rem;
 }
 
+.sidebar .nav-menu img{
+    width: 2rem;
+}
+
+
 .create-playlist.row{
     align-items: center;
 }
+
 
 .btn-playlist{
     height: 2rem;
@@ -112,6 +131,15 @@ body{
     font-weight: bold;
     margin: 1rem 1rem 1rem 0;
 }
+
+.create-playlist.row>span:hover{
+    background-color: white;  
+}
+
+.create-playlist.row>p:hover{
+    color: white;
+}
+
 
 .nav-menu li.row{
     align-items: center;
@@ -174,7 +202,10 @@ body{
     color: white;
     padding: 1rem 2.5rem;
     border-radius: 50px;
+    margin-right: 1rem;
 }
+
+
 
 /* MAIN */
 
@@ -218,6 +249,8 @@ main section>p {
 .content-nav{
     line-height: 2rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #7a7c81;
 }
 
 .content-nav .row{
@@ -226,6 +259,11 @@ main section>p {
 
 .content-nav .row>li{
     margin: 0 1rem;
+}
+
+.content-nav li:hover{
+    color: white;
+    border-bottom: 2px solid  rgb(90, 180, 90);
 }
 
 /* Section recently played */
@@ -238,6 +276,30 @@ main section>p {
 
 
 /* Section Recently Played  */
+
+.recently-played .col-2{
+    position: relative;
+}
+
+.hover-icon{
+    position: absolute;
+    left: calc(50% - 2.5rem);
+    top: 25%;
+    font-size: 5rem;
+    display: none;
+}
+
+.recently-played .col-2:hover img{
+    filter: brightness(0.5)
+}
+
+.recently-played .col-2:hover .hover-icon{
+    display: block;
+}
+
+
+
+
 
 /* Section popular Artist  */
 
@@ -291,7 +353,7 @@ footer .col-center{
 .progress-bar{
     background-color:#5a5a5a;
     width: 30vw;
-    height: 3px;
+    height: 4px;
     border-radius: 20px;
     margin: 0rem 0.5rem;
 }
@@ -300,6 +362,14 @@ footer .col-center{
     background-color: white;
     height: 100%;
     width: 20%;
+}
+
+.player-bar.row:hover .progress{
+    background-color: rgb(90, 180, 90);
+}
+
+.col-side:hover .progress{
+    background-color: rgb(90, 180, 90);
 }
 
 .col-side .progress-bar{
