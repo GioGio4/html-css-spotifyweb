@@ -226,6 +226,11 @@ main section>p {
 
 /* Section recently played */
 
+.recently-played h3{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
 
 
 /* Section Recently Played  */
@@ -242,10 +247,14 @@ main section>p {
    FOOTER
 *********************************/
 
-footer{
+footer.row{
     height: 100px;
     background-color: #282828;
     padding: 0 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: sticky;
+    font-size: 1rem;
 }
 
 footer img{
@@ -253,13 +262,13 @@ footer img{
 }
 
 
-footer .col-3,
-footer .col{
+footer .col-side,
+footer .col-center{
     max-height: 100%;
     align-items: center;
 }
 
-footer .col{
+footer .col-center{
     justify-content: center;
 }
 
@@ -280,7 +289,7 @@ footer .col{
     width: 500px;
     height: 3px;
     border-radius: 20px;
-    margin: 1rem 1rem;
+    margin: 0rem 0.5rem;
 }
 
 .progress{
@@ -289,21 +298,38 @@ footer .col{
     width: 20%;
 }
 
-.col-3 .progress-bar{
-    width: 150px;
+.col-side .progress-bar{
+    width: 100px;
 }
 
-footer .col-3 i,
-footer .col-3 img{
+footer .col-side i,
+footer .col-side img{
     margin: 0 0.5rem;
 }
 
-footer .col-3 p{
+footer .col-side p{
     text-align: left;
     margin-right: 0.5rem;
 }
 
-.col-3.row.right{
+.col-side.row.right{
     justify-content: flex-end;
 }
 
+/********************************* 
+   MEDIA QUERIES
+*********************************/
+
+/* ---Large---- */
+
+@media screen and (max-width:1201px){
+
+    .recently-played .col-2,
+    .create-user .col-2,
+    .popular-artist .col-2{
+        flex-basis: calc((100% / 12) * 3);
+        max-width: calc((100% / 12) * 3);
+    }
+
+
+}
